@@ -49,9 +49,7 @@ def movies_with_director_key(name, movies_collection)
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
   
-  result = []
-  
-  flatten_a_o_a(movies_collection)
+  movies_collection.each do |movie|
   
 end
 
