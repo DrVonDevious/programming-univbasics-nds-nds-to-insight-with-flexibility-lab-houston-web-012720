@@ -56,9 +56,7 @@ def gross_per_studio(collection)
   # return:
   #   Columbia => 125365534
   
-  result = {}
-  
-  studio_index = 0
+  collection.reduce do 
   
 end
 
