@@ -19,7 +19,7 @@ that we might need. It's easy to to feel "stuck." It happens to programmers all
 the time!
 
 When this happens, we need to think _flexibly_ and work from what we're given
-and get _one_ tiny step closer to the final goal &mdash; even if we can't see
+and get _one_ tiny step closer to the final goal; even if we can't see
 the finish line. Or, maybe we need to hard-code or type an example of the goal
 and work backwards from it.  We like to call this approach the "see-saw"
 approach (or "teeter-totter"). The idea is that Ruby is your partner on the
