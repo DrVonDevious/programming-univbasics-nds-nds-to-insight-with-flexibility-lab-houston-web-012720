@@ -57,7 +57,7 @@ def gross_per_studio(collection)
   #   Columbia => 125365534
   earnings_aoh = {}
   collection.each do |movie|
-    if earnings_aoh[:studio]
+    if earnings_aoh[:studio] == movie[:studio]
       earnings_aoh[:worldwide_gross] += movie[:worldwide_gross]
     else
       earnings_aoh[:studio] = movie[:studio]
