@@ -50,7 +50,6 @@ def movies_with_director_key(name, movies_collection)
   # movie_with_director_name method
   movies_collection.each do |movie|
     movie[:director_name] = name
-    end
   end
 end
 
