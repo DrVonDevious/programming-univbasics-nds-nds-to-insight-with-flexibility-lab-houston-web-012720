@@ -49,8 +49,8 @@ def movies_with_director_key(name, movies_collection)
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
   
-  movies_collection.each do |director, attribute|
-    puts director
+  movies_collection.map do |movies, attributes|
+    movies[:director_name] = name
   end
   
 end
