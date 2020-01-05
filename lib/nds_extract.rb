@@ -66,6 +66,7 @@ def gross_per_studio(collection)
     pp earnings_aoh[:worldwide_gross]
   end
   earnings_aoh
+  pp collection
 end
 
 def movies_with_directors_set(source)
