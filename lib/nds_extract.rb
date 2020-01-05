@@ -55,10 +55,13 @@ def gross_per_studio(collection)
   
   # return:
   #   Columbia => 125365534
-  
-  collection.reduce do |movie|
-    
+  earnings_hash = {}
+  i = 0
+  collection.map do |movie|
+    earnings_hash[i][:studio] = movie[:studio]
+    i += 1
   end
+  pp earnings_hash
 end
 
 def movies_with_directors_set(source)
