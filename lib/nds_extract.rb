@@ -58,7 +58,7 @@ def gross_per_studio(collection)
   earnings_hash = {}
   i = 0
   collection.map do |movie|
-    earnings_hash[i][:studio] = movie[:studio]
+    earnings_hash[i][:studio] = "Billy" #movie[:studio]
     i += 1
   end
   pp earnings_hash
