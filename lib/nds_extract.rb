@@ -57,7 +57,7 @@ def gross_per_studio(collection)
   #   Columbia => 125365534
   
   collection.each do |movie|
-    
+    index = 0
   end
 end
 
