@@ -4,8 +4,6 @@ require 'directors_database'
 # A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2],
 # [3,4,5], [6]] => [1,2,3,4,5,6].
 
-pp directors_database
-
 def flatten_a_o_a(aoa)
   result = []
   i = 0
@@ -52,7 +50,7 @@ def movies_with_director_key(name, movies_collection)
   # movie_with_director_name method
   
   movies_collection.each do |director, attribute|
-    puts 
+    puts director[attribute]
   end
   
 end
