@@ -56,7 +56,7 @@ def gross_per_studio(collection)
   # return:
   #   Columbia => 125365534
   
-  collection.reduce do |movie|
+  collection.each do |movie|
     p movie
   end
 end
