@@ -55,10 +55,10 @@ def gross_per_studio(collection)
   
   # return:
   #   Columbia => 125365534
-  earnings_hash = {}
+  earnings_hash = []
   i = 0
   collection.map do |movie|
-    earnings_hash[i][:studio] = "Billy" #movie[:studio]
+    earnings_hash[i][:studio] = movie[:studio]
     i += 1
   end
   pp earnings_hash
