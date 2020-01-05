@@ -61,7 +61,7 @@ def gross_per_studio(collection)
     pp earnings_aoh[i] 
     i += 1
   end
-  pp earnings_hash
+  pp earnings_aoh
 end
 
 def movies_with_directors_set(source)
