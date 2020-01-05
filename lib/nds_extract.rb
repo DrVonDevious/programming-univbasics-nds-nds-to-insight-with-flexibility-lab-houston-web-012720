@@ -56,8 +56,9 @@ def gross_per_studio(collection)
   # return:
   #   Columbia => 125365534
   
-  collection.reduce do 
-  
+  collection.reduce do |movie|
+    p movie
+  end
 end
 
 def movies_with_directors_set(source)
