@@ -39,17 +39,11 @@ def movies_with_director_key(name, movies_collection)
   end
 end
 
-
 def gross_per_studio(collection)
 
   earnings_aoh = {}
   collection.each do |movie|
-    if earnings_aoh[:studio] == movie[:studio]
-      earnings_aoh[:worldwide_gross] += movie[:worldwide_gross]
-    else
-      earnings_aoh[:studio] = movie[:studio]
-      earnings_aoh[:worldwide_gross] = movie[:worldwide_gross]
-    end
+    
   end
   pp earnings_aoh
 end
