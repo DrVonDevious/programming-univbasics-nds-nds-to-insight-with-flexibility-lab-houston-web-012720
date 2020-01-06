@@ -52,21 +52,12 @@ def gross_per_studio(collection)
 end
 
 def movies_with_directors_set(source)
-  result = []
-  director_index = 0
-  while director_index < source.length do
-    director = []
-    movie_index = 0
-    while movie_index < source[director_index][:movies].length do
-      director.push({source[director_index][:movies][movie_index][:title] => source[director_index][:name]})
-      movie_index += 1
-    end
-    result.push(director)
-    director_index += 1
-  end
-  
-  return result
-  
+  new_arr = []
+  source.each do |movies_info|
+    movies_info_with_director = movies_with_director_key(movies_info[:name], movies_info[:movies])
+    new_arr << movies_info_with_director
+  end #each
+  new_arr
 end
 
 # ----------------    End of Your Code Region --------------------
