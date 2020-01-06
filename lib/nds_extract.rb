@@ -40,23 +40,15 @@ def movies_with_director_key(name, movies_collection)
 end
 
 def gross_per_studio(collection)
-  director_index = 0
-  studio_gross_totals = Hash.new
-
-  # Setting up studio hash with studio names
-  while director_index < collection.size do
-    if !( studio_gross_totals.has_key? 'collection[director_index][:studio]' )
-      studio_gross_totals[collection[director_index][:studio]] = 0
-    end
-    director_index += 1
-  end
-  director_index = 0
-
-  while director_index < collection.size do
-    studio_gross_totals[collection[director_index][:studio]] += collection[director_index][:worldwide_gross]
-    director_index += 1
-  end
-  studio_gross_totals
+  totals = {}
+  collection.each do |movie|
+    if totals[movie[:studio]]
+      totals[movie[:studio]] += movie[:worldwide_gross]
+    else
+      totals[movie[:studio]] = movie[:worldwide_gross]
+    end #if
+  end #each
+  totals
 end
 
 def movies_with_directors_set(source)
